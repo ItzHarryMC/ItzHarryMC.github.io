@@ -12,6 +12,8 @@
       align-items: center;
       flex-direction: column;
   }
+  
+  .info ul,
   .socials ul {
       display: flex;
       justify-content: space-evenly;
@@ -34,6 +36,11 @@
                   0 5px 10px rgba(0,0,0,.35),
                   0 10px 10px rgba(0,0,0,.3),
                   0 20px 20px rgba(0,0,0,.25);
+  }
+  
+  .info ul li {
+      margin: 0 18px;
+      letter-spacing: 1px;
   }
   
   .socials ul {
@@ -91,10 +98,31 @@
           width: 45px;
           height: 45px;
       }
+  
+      .info ul li {
+          margin: 0 9px;
+          letter-spacing: 1px;
+          font-size: 14px;
+      }
   }
+  
+  @media (max-width: 460px) {
+      .info ul li {
+          margin: 0 7px;
+          letter-spacing: -0.1px;
+          font-size: 13px;
+          font-weight: 100;
+      }
+  }
+  
   @media (max-width: 350px) {
       h1 {
           font-size: 38px;
+          justify-content: center;
+      }
+  
+      .info ul {
+          flex-wrap: wrap;
           justify-content: center;
       }
   
@@ -177,22 +205,13 @@
       padding-top: 10px;
       padding-bottom: 10px;
     }
-    .main p {
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-  color: #eee;
-  margin: 0 18px;
-  letter-spacing: 1px;
-  font-size: larger;
-}
 </style>
 <html lang="en" dir="ltr">
     <link rel="shortcut icon" type="images/png" href="assets/pictures/favicon.png">
     <div class="navbar">
       <a href="/">Home</a>
-      <a target="_self" class="active" href="/aboutme" title="About me">About me</a>
-      <a target="_self" href="/socials.html" title="Socials">Socials</a>
+      <a target="_self" href="/aboutme.html" title="About me">About me</a>
+      <a target="_self" class="active" href="/socials.html" title="Socials">Socials</a>
       <a target="_self" href="/contact.html" title="Contact">Contact</a>
       <img src="assets/pictures/Favicon.png" style="width:100px;height: 100px;">
     </div>
@@ -201,7 +220,7 @@
       <title>ItzHarryMc Webpage</title>
       <meta content="ItzHarryMc" property="og:title">
       <meta content="ItzHarryMC Webpage" property="og:site_name">
-      <meta content="Come Check out my About me Page!" property="og:description">
+      <meta content="Come check out my Socials page!" property="og:description">
       <meta content='https://github.com/ItzHarryMC/ItzHarryMC.github.io/blob/main/assets/pictures/favicon.png?raw=true' property='og:image'>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="assets/script.js"></script>
@@ -211,17 +230,16 @@
     <body>
       <div id="bg"></div>
       <div class="main">
-        <h1>About me</h1>
+        <h1>Socials</h1>
         <div class="info">
           <ul>
-            <p>Hello my name is Harry, I am a Minecraft player and a Youtuber</p>
-            <p>I solo bridge and also play some Bedwars. Irl, I play Football/Soccer and I also run alot</p>
-            <p>Thats all about me, Have fun looking at my page!😊</p>
+            <li>Here are my Socials!</li>
           </ul>
         </div>
         <div class="socials">
           <ul>
-            <a target="_self" href="/" title="Home"><li><i class="fas fa-home"></i></li></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCSEBOHcmtNAcmSO6pe49O4A" title="Youtube"><li><i class="fa-brands fa-youtube"></i></li></a>
+            <a target="_blank" href="https://twitch.tv/ItzHarryMC" title="Twitch"><li><i class="fa-brands fa-twitch"></i></li></a>
           </ul>
     </body>
   </html>  

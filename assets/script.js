@@ -93,3 +93,10 @@ var gradients = [
   
   // go go go!
   window.requestAnimationFrame(updateGradient);
+
+  // Copy to clipboard code 
+  function a() {
+    navigator.clipboard.writeText('ItzHarryMC#6993')
+    window.alert("Copied 'ItzHarryMC#6993' to Clipboard!");
+  }
+  (window.onload = onLoad), (window.onresize = onResize);
